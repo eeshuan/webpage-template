@@ -12,7 +12,7 @@ export default class Routes extends React.Component {
         return (
             <HashRouter>
                 <Switch>
-                    <Route path="/" exact component={()=>{return(<Home data={this.props.data}/>)}}/>
+                    <Route path="/" exact component={(props)=>{return(<Home {...props}/>)}}/>
                 </Switch>
             </HashRouter>
         );
